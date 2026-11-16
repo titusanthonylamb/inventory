@@ -52,6 +52,7 @@ public class Item {
         quantityOnHand = newQuantity;
     }
 
+    // Getters for every field. Setters for everything EXCEPT quantityOnHand.
     public Long getId() {
         return id;
     }
@@ -111,6 +112,4 @@ public class Item {
     public boolean isLowStock() {
         return quantityOnHand <= reorderThreshold;
     }
-
-    // Getters for every field. Setters for everything EXCEPT quantityOnHand.
 }
